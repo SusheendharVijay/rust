@@ -1,11 +1,14 @@
 use std::convert::TryFrom;
 
 use crate::{
-    db::DbError,
     traits::{ChainCommunicationError, Common, TxOutcome},
     utils::home_domain_hash,
     Decode, Encode, Message, NomadError, NomadMessage, SignedUpdate, Update,
 };
+
+#[cfg(feature = "db")]
+use crate::db::DbError;
+
 use async_trait::async_trait;
 use color_eyre::Result;
 use ethers::{
@@ -145,6 +148,7 @@ pub trait Home: Common + Send + Sync + std::fmt::Debug {
 
 /// Interface for retrieving event data emitted specifically by the home
 #[async_trait]
+#[cfg(feature = "db")]
 pub trait HomeEvents: Home + Send + Sync + std::fmt::Debug {
     /// Fetch the message to destination at the nonce (or error).
     /// This should fetch events from the chain API.

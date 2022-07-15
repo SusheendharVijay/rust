@@ -13,7 +13,10 @@ use ethers::{
 };
 use std::{error::Error as StdError, fmt::Display};
 
-use crate::{db::DbError, NomadError, SignedUpdate};
+use crate::{NomadError, SignedUpdate};
+
+#[cfg(feature = "db")]
+use crate::db::DbError;
 
 pub use encode::*;
 pub use home::*;
@@ -137,6 +140,7 @@ pub trait Common: Sync + Send + std::fmt::Debug {
 
 /// Interface for retrieving event data emitted by both the home and replica
 #[async_trait]
+#[cfg(feature = "db")]
 pub trait CommonEvents: Common + Send + Sync + std::fmt::Debug {
     /// Fetch the first signed update building off of `old_root`. If `old_root`
     /// was never accepted or has never been updated, this will return `Ok(None )`.

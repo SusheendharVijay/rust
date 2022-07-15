@@ -13,6 +13,7 @@ pub use accumulator;
 /// AWS global state and init
 pub mod aws;
 
+#[cfg(feature = "db")]
 /// DB related utilities
 pub mod db;
 
