@@ -325,7 +325,7 @@ pub mod xappconnectionmanager_mod {
             }
         }
     }
-    #[doc = "Container type for all input parameters for the `domainToReplica`function with signature `domainToReplica(uint32)` and selector `[185, 207, 241, 98]`"]
+    #[doc = "Container type for all input parameters for the `domainToReplica` function with signature `domainToReplica(uint32)` and selector `[185, 207, 241, 98]`"]
     #[derive(
         Clone,
         Debug,
@@ -337,7 +337,7 @@ pub mod xappconnectionmanager_mod {
     )]
     #[ethcall(name = "domainToReplica", abi = "domainToReplica(uint32)")]
     pub struct DomainToReplicaCall(pub u32);
-    #[doc = "Container type for all input parameters for the `home`function with signature `home()` and selector `[159, 169, 47, 157]`"]
+    #[doc = "Container type for all input parameters for the `home` function with signature `home()` and selector `[159, 169, 47, 157]`"]
     #[derive(
         Clone,
         Debug,
@@ -349,7 +349,7 @@ pub mod xappconnectionmanager_mod {
     )]
     #[ethcall(name = "home", abi = "home()")]
     pub struct HomeCall;
-    #[doc = "Container type for all input parameters for the `isReplica`function with signature `isReplica(address)` and selector `[81, 144, 188, 83]`"]
+    #[doc = "Container type for all input parameters for the `isReplica` function with signature `isReplica(address)` and selector `[81, 144, 188, 83]`"]
     #[derive(
         Clone,
         Debug,
@@ -363,7 +363,7 @@ pub mod xappconnectionmanager_mod {
     pub struct IsReplicaCall {
         pub replica: ethers::core::types::Address,
     }
-    #[doc = "Container type for all input parameters for the `localDomain`function with signature `localDomain()` and selector `[141, 54, 56, 244]`"]
+    #[doc = "Container type for all input parameters for the `localDomain` function with signature `localDomain()` and selector `[141, 54, 56, 244]`"]
     #[derive(
         Clone,
         Debug,
@@ -375,7 +375,7 @@ pub mod xappconnectionmanager_mod {
     )]
     #[ethcall(name = "localDomain", abi = "localDomain()")]
     pub struct LocalDomainCall;
-    #[doc = "Container type for all input parameters for the `owner`function with signature `owner()` and selector `[141, 165, 203, 91]`"]
+    #[doc = "Container type for all input parameters for the `owner` function with signature `owner()` and selector `[141, 165, 203, 91]`"]
     #[derive(
         Clone,
         Debug,
@@ -387,7 +387,7 @@ pub mod xappconnectionmanager_mod {
     )]
     #[ethcall(name = "owner", abi = "owner()")]
     pub struct OwnerCall;
-    #[doc = "Container type for all input parameters for the `ownerEnrollReplica`function with signature `ownerEnrollReplica(address,uint32)` and selector `[243, 31, 174, 251]`"]
+    #[doc = "Container type for all input parameters for the `ownerEnrollReplica` function with signature `ownerEnrollReplica(address,uint32)` and selector `[243, 31, 174, 251]`"]
     #[derive(
         Clone,
         Debug,
@@ -405,7 +405,7 @@ pub mod xappconnectionmanager_mod {
         pub replica: ethers::core::types::Address,
         pub domain: u32,
     }
-    #[doc = "Container type for all input parameters for the `ownerUnenrollReplica`function with signature `ownerUnenrollReplica(address)` and selector `[143, 93, 144, 224]`"]
+    #[doc = "Container type for all input parameters for the `ownerUnenrollReplica` function with signature `ownerUnenrollReplica(address)` and selector `[143, 93, 144, 224]`"]
     #[derive(
         Clone,
         Debug,
@@ -419,7 +419,7 @@ pub mod xappconnectionmanager_mod {
     pub struct OwnerUnenrollReplicaCall {
         pub replica: ethers::core::types::Address,
     }
-    #[doc = "Container type for all input parameters for the `renounceOwnership`function with signature `renounceOwnership()` and selector `[113, 80, 24, 166]`"]
+    #[doc = "Container type for all input parameters for the `renounceOwnership` function with signature `renounceOwnership()` and selector `[113, 80, 24, 166]`"]
     #[derive(
         Clone,
         Debug,
@@ -431,7 +431,7 @@ pub mod xappconnectionmanager_mod {
     )]
     #[ethcall(name = "renounceOwnership", abi = "renounceOwnership()")]
     pub struct RenounceOwnershipCall;
-    #[doc = "Container type for all input parameters for the `replicaToDomain`function with signature `replicaToDomain(address)` and selector `[95, 139, 29, 186]`"]
+    #[doc = "Container type for all input parameters for the `replicaToDomain` function with signature `replicaToDomain(address)` and selector `[95, 139, 29, 186]`"]
     #[derive(
         Clone,
         Debug,
@@ -443,7 +443,7 @@ pub mod xappconnectionmanager_mod {
     )]
     #[ethcall(name = "replicaToDomain", abi = "replicaToDomain(address)")]
     pub struct ReplicaToDomainCall(pub ethers::core::types::Address);
-    #[doc = "Container type for all input parameters for the `setHome`function with signature `setHome(address)` and selector `[110, 240, 243, 127]`"]
+    #[doc = "Container type for all input parameters for the `setHome` function with signature `setHome(address)` and selector `[110, 240, 243, 127]`"]
     #[derive(
         Clone,
         Debug,
@@ -457,7 +457,7 @@ pub mod xappconnectionmanager_mod {
     pub struct SetHomeCall {
         pub home: ethers::core::types::Address,
     }
-    #[doc = "Container type for all input parameters for the `setWatcherPermission`function with signature `setWatcherPermission(address,uint32,bool)` and selector `[145, 108, 52, 112]`"]
+    #[doc = "Container type for all input parameters for the `setWatcherPermission` function with signature `setWatcherPermission(address,uint32,bool)` and selector `[145, 108, 52, 112]`"]
     #[derive(
         Clone,
         Debug,
@@ -476,7 +476,7 @@ pub mod xappconnectionmanager_mod {
         pub domain: u32,
         pub access: bool,
     }
-    #[doc = "Container type for all input parameters for the `transferOwnership`function with signature `transferOwnership(address)` and selector `[242, 253, 227, 139]`"]
+    #[doc = "Container type for all input parameters for the `transferOwnership` function with signature `transferOwnership(address)` and selector `[242, 253, 227, 139]`"]
     #[derive(
         Clone,
         Debug,
@@ -490,7 +490,7 @@ pub mod xappconnectionmanager_mod {
     pub struct TransferOwnershipCall {
         pub new_owner: ethers::core::types::Address,
     }
-    #[doc = "Container type for all input parameters for the `unenrollReplica`function with signature `unenrollReplica(uint32,bytes32,bytes)` and selector `[224, 231, 169, 19]`"]
+    #[doc = "Container type for all input parameters for the `unenrollReplica` function with signature `unenrollReplica(uint32,bytes32,bytes)` and selector `[224, 231, 169, 19]`"]
     #[derive(
         Clone,
         Debug,
@@ -509,7 +509,7 @@ pub mod xappconnectionmanager_mod {
         pub updater: [u8; 32],
         pub signature: ethers::core::types::Bytes,
     }
-    #[doc = "Container type for all input parameters for the `watcherPermission`function with signature `watcherPermission(address,uint32)` and selector `[66, 126, 190, 245]`"]
+    #[doc = "Container type for all input parameters for the `watcherPermission` function with signature `watcherPermission(address,uint32)` and selector `[66, 126, 190, 245]`"]
     #[derive(
         Clone,
         Debug,
@@ -723,4 +723,81 @@ pub mod xappconnectionmanager_mod {
             XAppConnectionManagerCalls::WatcherPermission(var)
         }
     }
+    #[doc = "Container type for all return fields from the `domainToReplica` function with signature `domainToReplica(uint32)` and selector `[185, 207, 241, 98]`"]
+    #[derive(
+        Clone,
+        Debug,
+        Default,
+        Eq,
+        PartialEq,
+        ethers :: contract :: EthAbiType,
+        ethers :: contract :: EthAbiCodec,
+    )]
+    pub struct DomainToReplicaReturn(pub ethers::core::types::Address);
+    #[doc = "Container type for all return fields from the `home` function with signature `home()` and selector `[159, 169, 47, 157]`"]
+    #[derive(
+        Clone,
+        Debug,
+        Default,
+        Eq,
+        PartialEq,
+        ethers :: contract :: EthAbiType,
+        ethers :: contract :: EthAbiCodec,
+    )]
+    pub struct HomeReturn(pub ethers::core::types::Address);
+    #[doc = "Container type for all return fields from the `isReplica` function with signature `isReplica(address)` and selector `[81, 144, 188, 83]`"]
+    #[derive(
+        Clone,
+        Debug,
+        Default,
+        Eq,
+        PartialEq,
+        ethers :: contract :: EthAbiType,
+        ethers :: contract :: EthAbiCodec,
+    )]
+    pub struct IsReplicaReturn(pub bool);
+    #[doc = "Container type for all return fields from the `localDomain` function with signature `localDomain()` and selector `[141, 54, 56, 244]`"]
+    #[derive(
+        Clone,
+        Debug,
+        Default,
+        Eq,
+        PartialEq,
+        ethers :: contract :: EthAbiType,
+        ethers :: contract :: EthAbiCodec,
+    )]
+    pub struct LocalDomainReturn(pub u32);
+    #[doc = "Container type for all return fields from the `owner` function with signature `owner()` and selector `[141, 165, 203, 91]`"]
+    #[derive(
+        Clone,
+        Debug,
+        Default,
+        Eq,
+        PartialEq,
+        ethers :: contract :: EthAbiType,
+        ethers :: contract :: EthAbiCodec,
+    )]
+    pub struct OwnerReturn(pub ethers::core::types::Address);
+    #[doc = "Container type for all return fields from the `replicaToDomain` function with signature `replicaToDomain(address)` and selector `[95, 139, 29, 186]`"]
+    #[derive(
+        Clone,
+        Debug,
+        Default,
+        Eq,
+        PartialEq,
+        ethers :: contract :: EthAbiType,
+        ethers :: contract :: EthAbiCodec,
+    )]
+    pub struct ReplicaToDomainReturn(pub u32);
+    #[doc = "Container type for all return fields from the `watcherPermission` function with signature `watcherPermission(address,uint32)` and selector `[66, 126, 190, 245]`"]
+    #[derive(
+        Clone,
+        Debug,
+        Default,
+        Eq,
+        PartialEq,
+        ethers :: contract :: EthAbiType,
+        ethers :: contract :: EthAbiCodec,
+    )]
+    pub struct WatcherPermissionReturn(pub bool);
 }
