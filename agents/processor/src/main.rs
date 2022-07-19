@@ -21,7 +21,7 @@ use nomad_base::NomadAgent;
 #[tokio::main(flavor = "current_thread")]
 async fn main() -> Result<()> {
     color_eyre::install()?;
-    let settings = Settings::new()?;
+    let settings = Settings::new().await?;
 
     // TODO: top-level root span customizations?
     let agent = Processor::from_settings(settings).await?;

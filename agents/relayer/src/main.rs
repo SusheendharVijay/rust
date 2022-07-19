@@ -17,7 +17,7 @@ use nomad_base::NomadAgent;
 #[tokio::main(flavor = "current_thread")]
 async fn main() -> Result<()> {
     color_eyre::install()?;
-    let settings = Settings::new()?;
+    let settings = Settings::new().await?;
 
     let agent = Relayer::from_settings(settings).await?;
 
