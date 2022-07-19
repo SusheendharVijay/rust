@@ -2,6 +2,7 @@
 
 ### Unreleased
 
+- add environment variable override for remote config uri
 - add environment variable overrides for agent configuration
 - add tests for agent environment variable overrides
 - remove `enabled` flag from agents project-wide
